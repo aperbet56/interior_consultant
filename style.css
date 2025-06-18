@@ -222,3 +222,33 @@ footer {
 .dev__challenges__link:hover {
     text-decoration: underline;
 }
+
+/**** responsive design version tablette ****/
+
+@media screen and (max-width: 850px) {
+
+    body {
+        padding: 30px;
+    }
+
+    .nav__list__item {
+        padding: 0 15px;
+    }
+
+    .nav__list__item:last-child {
+        padding: 0 0 0 15px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .presentation__box,
+    .photo__box {
+        width: 100%;
+    }
+
+    .presentation__box {
+        margin-bottom: 50px;
+    }
+}
