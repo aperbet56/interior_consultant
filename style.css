@@ -1,0 +1,224 @@
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/**** body ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    background-color: #181719;
+    padding: 30px 50px;
+}
+
+/**** header ****/
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-family: "Crimson Pro", sans-serif;
+    padding: 8px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+/**** navigation ****/
+
+.logo,
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    padding: 8px 0;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__list__item {
+    padding: 0 25px;
+}
+
+.nav__list__item:last-child {
+    padding: 0 0 0 25px;
+}
+
+.nav__list__item>a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    margin-top: 3px;
+    background-color: #ffffff;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav__list__item:hover>a::after {
+    width: 100%;
+}
+
+.link.active {
+    font-weight: 700;
+}
+
+.burger__btn {
+    display: none;
+}
+
+/**** main ****/
+
+.main__content {
+    flex-grow: 1;
+    padding: 150px 0;
+}
+
+/**** section container ****/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/**** div presentation box ****/
+
+.presentation__box {
+    width: 35%;
+}
+
+.title {
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.description {
+    margin: 20px 0;
+    font-weight: 300;
+    max-width: 250px;
+    line-height: 1.4;
+}
+
+.more__btn {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.more__btn i {
+    margin-left: 10px;
+}
+
+/**** div photo box ****/
+
+.photo__box {
+    position: relative;
+    width: 60%;
+}
+
+.img__photo__box {
+    width: 100%;
+    min-height: 240px;
+}
+
+.img__photo__box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author__box {
+    position: absolute;
+    bottom: -50px;
+    right: 30px;
+    z-index: 1;
+    padding: 8px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #181719;
+    /*width: 400px;*/
+    width: 60%;
+    height: 150px;
+}
+
+.profile__overview {
+    width: 100%;
+    height: 100%;
+}
+
+.author__description {
+    display: flex;
+    align-items: center;
+}
+
+.img__box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.img__box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.author__job {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #828282;
+}
+
+.author__title {
+    margin-top: 20px;
+    max-width: 210px;
+    font-family: "Lora", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/**** footer ****/
+
+footer {
+    text-align: center;
+}
+
+.dev__challenges__link {
+    color: #828282;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.dev__challenges__link:hover {
+    text-decoration: underline;
+}
