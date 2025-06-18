@@ -1,5 +1,7 @@
 ## INTERIOR CONSULTANT | DEV CHALLENGES
 
+![Design preview for the interior consultant project](./img/preview.png)
+
 ## Le challenge
 
 Voici ma solution au challenge : interior consultant de Dev challenges.
