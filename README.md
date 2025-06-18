@@ -8,7 +8,7 @@ Voici ma solution au challenge : interior consultant de Dev challenges.
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/interior_consultant/
 
 ## Projet développé avec
 
